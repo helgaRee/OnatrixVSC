@@ -1,0 +1,26 @@
+header {
+    .container{
+        background-color: black;
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--color-primary, #4F5955); // Använd en variabel eller fallback
+            padding: 15px 0;
+            .logo {
+    
+            }
+            .navbra-list {
+                color: blue;
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                .navlink {
+    
+                }
+            }
+
+        }
+    }
+}

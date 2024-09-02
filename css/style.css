@@ -1,0 +1,47 @@
+header .topnav {
+  background-color: var(--color-primary);
+  padding: 0.5rem;
+}
+header .topnav .container .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .topnav .container .content .adress p {
+  color: white;
+}
+header .container .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+header .container .navbar .navbar-list {
+  color: blue;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+/*HERO SECTION*/
+.hero .container {
+  background-color: rgb(200, 234, 249);
+}
+.hero .container .hero-content {
+  width: 50%;
+  padding-top: 4rem;
+  padding-left: 2rem;
+}
+.hero .container .hero-content div {
+  padding-bottom: 5rem;
+}
+/*ABOUT US SECTION*/
+.about-us .container .content {
+  width: 60%;
+  padding-top: 5rem;
+}
+.about-us .container .form-container {
+  border: 1px solid blue;
+  width: 470px;
+  height: 570px;
+}

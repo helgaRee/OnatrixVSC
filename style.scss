@@ -1,0 +1,111 @@
+header {
+
+    .topnav {
+        background-color: var(--color-primary);
+        padding: 0.5rem;
+
+        .container {
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .adress {
+                    p {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .container {
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+
+            .logo {}
+
+            .navbar-list {
+                color: blue;
+                list-style: none;
+                display: flex;
+
+                margin: 0;
+                padding: 0;
+
+                .navlink {}
+            }
+
+        }
+    }
+}
+
+
+
+/*HERO SECTION*/
+.hero {
+
+    .background {}
+
+    .container {
+        background-color: rgb(200, 234, 249);
+
+        .hero-content {
+            width: 50%;
+            padding-top: 4rem;
+            padding-left: 2rem;
+
+            .headline {}
+
+            .ingress {}
+
+            div {
+                padding-bottom: 5rem;
+
+                a {}
+            }
+        }
+    }
+}
+
+/*ABOUT US SECTION*/
+.about-us {
+    .container {
+        .content {
+            width: 60%;
+            padding-top: 5rem;
+
+            .headline {
+                h5 {}
+
+                h2 {}
+            }
+
+            .quote {}
+
+            p {}
+
+            .signature-container {
+                .signature {
+                    img {}
+
+                    .clarification {
+                        .name {}
+                    }
+                }
+            }
+
+        }
+
+        .form-container {
+            border: 1px solid blue;
+            width: 470px;
+            height: 570px;
+        }
+    }
+}
