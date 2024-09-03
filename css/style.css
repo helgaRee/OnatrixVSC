@@ -226,24 +226,37 @@
     z-index: 1;
   }
 }
+.wrapper .hero .background {
+  display: none;
+  background-image: url("/images/Hero-home.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 41vh;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
 @media (min-width: 768px) {
   .wrapper .hero .background {
-    background-image: url("/images/Hero-home.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: 1;
+    display: block;
   }
 }
 .wrapper .hero .container .hero-content {
-  width: 50%;
+  width: 100%;
   padding-top: 4rem;
-  padding-left: 2rem;
-  position: relative;
-  z-index: 2;
+}
+@media (min-width: 768px) {
+  .wrapper .hero .container .hero-content {
+    width: 60%;
+    position: relative;
+    z-index: 2;
+  }
+}
+@media (min-width: 1400px) {
+  .wrapper .hero .container .hero-content {
+    padding-top: 10rem;
+  }
 }
 .wrapper .hero .container .hero-content div {
   padding-bottom: 5rem;

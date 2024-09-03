@@ -228,16 +228,18 @@
         }
 
         .background {
+            display: none;
+            background-image: url('/images/Hero-home.jpg'); // Se till att sökvägen är korrekt
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 41vh; // Ger full höjd av skärmen
+            position: absolute;
+            top: 0;
+            z-index: 1;
 
             @include tablet {
-                background-image: url('/images/Hero-home.jpg'); // Se till att sökvägen är korrekt
-                background-size: cover;
-                background-position: center;
-                width: 100%;
-                height: 100vh; // Ger full höjd av skärmen
-                position: absolute;
-                top: 0;
-                z-index: 1;
+                display: block;
             }
         }
 
@@ -245,11 +247,19 @@
             // background-color: rgb(200, 234, 249);
 
             .hero-content {
-                width: 50%;
+                width: 100%;
                 padding-top: 4rem;
-                padding-left: 2rem;
-                position: relative;
-                z-index: 2;
+
+
+                @include tablet {
+                    width: 60%;
+                    position: relative;
+                    z-index: 2;
+                }
+                @include desktop {
+                    padding-top: 10rem;
+
+                }
 
                 .headline {}
 
