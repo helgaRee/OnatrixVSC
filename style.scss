@@ -78,12 +78,13 @@
                     align-items: center;
 
                     .adress {
+                        display: none;
 
-
-                        @include tablet {}
+                        @include tablet {display: contents;}
 
                         p {
                             color: white;
+                            padding:0;
                         }
                     }
 
@@ -123,9 +124,10 @@
                 display: flex;
                 flex-direction: row;
                 gap: 2rem;
+                display: none;
 
 
-                @include tablet {}
+                @include tablet {display: flex;}
 
                 li {
                     list-style: none;
@@ -134,11 +136,20 @@
                 a {}
             }
 
-            .btn-search {}
+            .btn-search {
+                position: absolute;
+                top: 0;
+                right: 0px;
+                padding: 0.6rem;
+
+                @include tablet{
+                   position: relative;
+                }
+            }
 
             .btn-menu {
-                display: none;
-                @include tablet {}
+                display: block;
+                @include tablet {display: none;}
             }
 
         }
