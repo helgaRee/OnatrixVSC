@@ -1,7 +1,8 @@
 @import "./mixins/mixins";
 
 @import "./misc/base";
+@import "./colors/theme.scss";
 
 @import "./components/components";
-@import "./colors/theme.scss";
+@import "./components/buttons";
 

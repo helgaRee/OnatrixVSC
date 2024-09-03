@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://kit.fontawesome.com/a576612222.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="/css/main.css">  
     <link rel="stylesheet" href="/css/theme.css">
     <link rel="stylesheet" href="/css/design-palette.css">
-    <link rel="icon" href="" type="">
-    <title>@pageTitle</title>
+    <link rel="icon" href="images/logo-icon.svg" type="">
+    <title>Onatrix styling</title>
 </head>
 <body>
     <div class="wrapper">
         <header>
-
-            <div class="topnav">
+            <div class="top">
                 <div class="container">
                     <div class="content">
                         <div class="adress">
-                            <p>Adress</p>
+                            <p>Klarabergsviadukten 90, 111 64 Stockholm</p>
                         </div>
                         <div class="ext-links">
                             <a href="">F</a>
@@ -31,30 +30,53 @@
 
             </div>
             <!--Navigation-->
-            <div class="container">
-               <nav class="navbar">
-                    <a href="" class="logo">Logo- To home page</a>    
-                    <ul class="navbar-list">
-                        <li class="navbar-list-item">
-                           <a href="" class="navlink">About</a>
-                        </li>
-                        <li class="navbar-list-item">
-                            <a href="" class="navlink">Services</a>
-                         </li>
-                         <li class="navbar-list-item">
-                            <a href="" class="navlink">Projects</a>
-                         </li>
-                         <li class="navbar-list-item">
-                            <a href="" class="navlink">Contact</a>
-                         </li>               
-                    </ul>
-                </nav> 
+            
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#home"><img src="images/logotype.svg" alt="Onatrix"></a>
+                </div>
+                <ul class="links">
+                    <li><a href="about">About</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="projects">projects</a></li>
+                    <li><a href="contact">contact</a></li>
+                </ul>
+                <a href="#" class="btn-search"><i class="fa-light fa-magnifying-glass"></i></a>
+                <button class="toggle_btn btn btn-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
+
+
+
+
+<!--             <div class="top-navigation">
+                <div class="container">
+                   <nav class="navbar">
+                        <a href="" class="logo">Logo- To home page</a> 
+                        <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>   
+                        <ul class="navbar-list">
+                            <li class="navbar-list-item">
+                               <a href="" class="navlink">About</a>
+                            </li>
+                            <li class="navbar-list-item">
+                                <a href="" class="navlink">Services</a>
+                             </li>
+                             <li class="navbar-list-item">
+                                <a href="" class="navlink">Projects</a>
+                             </li>
+                             <li class="navbar-list-item">
+                                <a href="" class="navlink">Contact</a>
+                             </li>               
+                        </ul>
+                    </nav> 
+                </div>
+            </div> -->
             
         </header>
         <main>
-            <section id="hero-slider" class="hero">
-                <div class="background" style="background-image:url('@backgroundImage');"></div>
+<!--             <section id="hero-slider" class="hero">
+                <div class="background"></div>
                 <div class="container">
                     <div class="hero-content">
                         <h1 class="headline">We bring
@@ -65,12 +87,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            
-            <style>
-
-
-            </style>
+            </section> 
             
            
             <section id="about-us" class="about-us">
@@ -97,26 +114,24 @@
                     </div>
                 </div>
             </section>
-            
-         <!--     
+           
             
             <section id="our-services" class="our-services">
                 <div class="container">
                     <div class="content">
                         <div class="headline">
-                            <h5>@Model?.Value("servicesSectionTitle")</h5>
-                            <h2>@Model?.Value("servicesHeadline")</h2>
+                            <h5></h5>
+                            <h2></h2>
                         </div>
                         <div class="item-container">
                             <h3>@Model?.Value("servicesItemTitle")</h3>
-                            <img src="@itemImage" alt="@Model?.Value("servicesItemTitle")" class="services-item-image" />
-                            <p class="item-text">@Model?.Value("servicesItemText")</p>
+                            <img src="" alt="" class="services-item-image" />
+                            <p class="item-text"></p>
                         </div>
                     </div>
                 </div>
             </section>
-            
-            
+                    
             
             
             <section id="our-story" class="our-story">
@@ -127,7 +142,7 @@
                             <h2>@Model?.Value("storyHeadline")</h2>
                         </div>
                         <p>@Model?.Value("storyText")</p>
-                        <a href="@Model?.Value("storyButtonUrl")" class="btn primary-btn">@Model?.Value("storyButtonText")</a>
+                        <a href="" class="btn primary-btn"></a>
                     </div>
                     <img src="@storyImage" alt="@Model?.Value("storyHeadline")" class="our-story-image" />
                 </div>
@@ -203,12 +218,14 @@
                     </div>
                 </div>
             </section>
+
         </main>
-        <footer></footer>
+        <footer>FOOTER</footer>
+        
+        -->
     </div>
- -->
 
     <!--script?-->
-    <script src="/scripts/main.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

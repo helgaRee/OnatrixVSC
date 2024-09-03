@@ -1,16 +1,16 @@
 @mixin button-colors($bg-color, $text-color, $hover-bg-color, $hover-text-color, $border-color: null, $hover-border-color: null) {
-    background-color: var($bg-color);
-    color: var($text-color);
-    border-color: if($border-color, var(border-color), var($bg-color));
+    background-color: var(--#{$bg-color});
+    color: var(--#{$text-color});
+    border-color: if($border-color != null, var(--#{$border-color}), var(--#{$bg-color}));
 
     outline: none !important;
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:hover {
-        background-color: var($hover-bg-color);
-        color: var($hover-text-color);
-        border-color: if($hover-border-color, var($hover-border-color), var($hover-bg-color));
+        background-color: var(--#{$hover-bg-color});
+        color: var(--#{$hover-text-color});
+        border-color: if($hover-border-color != null, var(--#{$hover-border-color}), var(--#{$hover-bg-color}));
     }
 
     &:hover,

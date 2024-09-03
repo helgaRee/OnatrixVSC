@@ -1,111 +1,300 @@
-header {
+@import "./css/scss/mixins/mixins-media";
 
-    .topnav {
-        background-color: var(--color-primary);
-        padding: 0.5rem;
+/*         
+  .top-navigation {
+      .container {
 
-        .container {
-            .content {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+          .navbar {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 15px 0;
 
-                .adress {
-                    p {
-                        color: white;
+              .logo {
+                  align-self: baseline;
+              }
+              .menu-bar {
+                  display: block;
+                  cursor: pointer;
+              }
+
+              .navbar-list {
+                  // display: none;
+                  display: flex;
+                  flex-direction: column;
+                  list-style: none;
+                  //position: absolute;
+                  width: 100%;
+                  justify-content: center;
+
+                  .navlink {}
+              }
+
+          }
+      }
+
+
+      @include tablet{
+          .container {
+
+              .navbar {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  padding: 15px 0;
+
+                  .logo {}
+               .menu-bar {
+                  display: none;
+              }
+                  .navbar-list {
+
+
+                      .navlink {}
+                  }
+
+              }
+          }
+      }
+  } */
+
+
+
+.wrapper {
+
+    header {
+        display: flex;
+        flex-direction: column;
+
+
+        .top {
+            background-color: var(--color-primary);
+            padding: 0.5rem;
+
+            .container {
+                .content {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .adress {
+
+
+                        @include tablet {}
+
+                        p {
+                            color: white;
+                        }
+                    }
+
+                    .ext-links {
+                        display: flex;
+
+                        a {
+                            border-left: 1px solid var(--color-primary-light);
+                            border-right: 1px solid var(--color-primary-light);
+                            padding-inline: 0.6rem;
+                        }
                     }
                 }
             }
         }
-    }
 
 
-    .container {
 
         .navbar {
+
+            width: 100%;
+            height: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
-
-            .logo {}
-
-            .navbar-list {
-                color: blue;
-                list-style: none;
-                display: flex;
-
-                margin: 0;
-                padding: 0;
-
-                .navlink {}
-            }
-
-        }
-    }
-}
+            justify-content: space-between;
 
 
+            .logo {
 
-/*HERO SECTION*/
-.hero {
-
-    .background {}
-
-    .container {
-        background-color: rgb(200, 234, 249);
-
-        .hero-content {
-            width: 50%;
-            padding-top: 4rem;
-            padding-left: 2rem;
-
-            .headline {}
-
-            .ingress {}
-
-            div {
-                padding-bottom: 5rem;
 
                 a {}
             }
-        }
-    }
-}
 
-/*ABOUT US SECTION*/
-.about-us {
-    .container {
-        .content {
-            width: 60%;
-            padding-top: 5rem;
+            .links {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
 
-            .headline {
-                h5 {}
 
-                h2 {}
+                @include tablet {}
+
+                li {
+                    list-style: none;
+                }
+
+                a {}
             }
 
-            .quote {}
+            .btn-search {}
 
-            p {}
+            .btn-menu {
+                display: none;
+                @include tablet {}
+            }
 
-            .signature-container {
-                .signature {
-                    img {}
+        }
 
-                    .clarification {
-                        .name {}
+        .top-navigation {
+            .container {
+
+                .navbar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 0;
+
+                    .logo {
+                        align-self: baseline;
                     }
+
+                    .menu-bar {
+                        display: block;
+                        cursor: pointer;
+                    }
+
+                    .navbar-list {
+                        // display: none;
+                        display: flex;
+                        flex-direction: column;
+                        list-style: none;
+                        //position: absolute;
+                        width: 100%;
+                        justify-content: center;
+
+                        .navlink {}
+                    }
+
                 }
             }
 
-        }
+            /* 
+            @include tablet {
+                .container {
 
-        .form-container {
-            border: 1px solid blue;
-            width: 470px;
-            height: 570px;
+                    .navbar {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 15px 0;
+
+                        .logo {}
+
+                        .menu-bar {
+                            display: none;
+                        }
+
+                        .navbar-list {
+
+
+                            .navlink {}
+                        }
+
+                    }
+                }
+            } */
         }
     }
+
+
+
+
+    /*HERO SECTION*/
+    .hero {
+
+
+        @include tablet {
+            position: relative;
+            z-index: 1;
+        }
+
+        .background {
+
+            @include tablet {
+                background-image: url('/images/Hero-home.jpg'); // Se till att sökvägen är korrekt
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100vh; // Ger full höjd av skärmen
+                position: absolute;
+                top: 0;
+                z-index: 1;
+            }
+        }
+
+        .container {
+            // background-color: rgb(200, 234, 249);
+
+            .hero-content {
+                width: 50%;
+                padding-top: 4rem;
+                padding-left: 2rem;
+                position: relative;
+                z-index: 2;
+
+                .headline {}
+
+                .ingress {}
+
+                div {
+                    padding-bottom: 5rem;
+
+                    a {}
+                }
+            }
+        }
+    }
+
+
+
+    /*ABOUT US SECTION*/
+    .about-us {
+        position: absolute;
+        z-index: 1;
+
+        .container {
+            .content {
+                width: 60%;
+                padding-top: 5rem;
+
+                .headline {
+                    h5 {}
+
+                    h2 {}
+                }
+
+                .quote {}
+
+                p {}
+
+                .signature-container {
+                    .signature {
+                        img {}
+
+                        .clarification {
+                            .name {}
+                        }
+                    }
+                }
+
+            }
+
+
+            .form-container {
+                border: 1px solid blue;
+                width: 470px;
+                height: 570px;
+            }
+        }
+    }
+
+
 }
