@@ -1,64 +1,5 @@
 @import "./css/scss/mixins/mixins-media";
 
-/*         
-  .top-navigation {
-      .container {
-
-          .navbar {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              padding: 15px 0;
-
-              .logo {
-                  align-self: baseline;
-              }
-              .menu-bar {
-                  display: block;
-                  cursor: pointer;
-              }
-
-              .navbar-list {
-                  // display: none;
-                  display: flex;
-                  flex-direction: column;
-                  list-style: none;
-                  //position: absolute;
-                  width: 100%;
-                  justify-content: center;
-
-                  .navlink {}
-              }
-
-          }
-      }
-
-
-      @include tablet{
-          .container {
-
-              .navbar {
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  padding: 15px 0;
-
-                  .logo {}
-               .menu-bar {
-                  display: none;
-              }
-                  .navbar-list {
-
-
-                      .navlink {}
-                  }
-
-              }
-          }
-      }
-  } */
-
-
 
 .wrapper {
 
@@ -67,7 +8,7 @@
         flex-direction: column;
 
 
-        .top {
+        .topbar {
             background-color: var(--color-primary);
             padding: 0.5rem;
 
@@ -80,11 +21,13 @@
                     .adress {
                         display: none;
 
-                        @include tablet {display: contents;}
+                        @include tablet {
+                            display: contents;
+                        }
 
                         p {
                             color: white;
-                            padding:0;
+                            padding: 0;
                         }
                     }
 
@@ -127,7 +70,9 @@
                 display: none;
 
 
-                @include tablet {display: flex;}
+                @include tablet {
+                    display: flex;
+                }
 
                 li {
                     list-style: none;
@@ -142,14 +87,17 @@
                 right: 0px;
                 padding: 0.6rem;
 
-                @include tablet{
-                   position: relative;
+                @include tablet {
+                    position: relative;
                 }
             }
 
             .btn-menu {
                 display: block;
-                @include tablet {display: none;}
+
+                @include tablet {
+                    display: none;
+                }
             }
 
         }
@@ -233,7 +181,7 @@
             background-size: cover;
             background-position: center;
             width: 100%;
-            height: 41vh; // Ger full höjd av skärmen
+            height: 52vh; // Ger full höjd av skärmen
             position: absolute;
             top: 0;
             z-index: 1;
@@ -252,13 +200,18 @@
 
 
                 @include tablet {
-                    width: 60%;
                     position: relative;
                     z-index: 2;
                 }
-                @include desktop {
-                    padding-top: 10rem;
 
+                @include desktop {
+                    width: 50%;
+                    padding-top: 3rem;
+
+                }
+
+                @include ultra-wide {
+                    width: 29%;
                 }
 
                 .headline {}
@@ -278,18 +231,34 @@
 
     /*ABOUT US SECTION*/
     .about-us {
-        position: absolute;
-        z-index: 1;
+
 
         .container {
+
+            @include desktop {
+                display: flex;
+            }
+
             .content {
-                width: 60%;
-                padding-top: 5rem;
+                margin-top: 5rem;
+
+
+                @include desktop {
+                    width: 60%;
+                    padding-inline: 4rem;
+                }
 
                 .headline {
-                    h5 {}
 
-                    h2 {}
+
+
+                    h5 {
+                        text-align: left;
+                    }
+
+                    h2 {
+                        text-align: left;
+                    }
                 }
 
                 .quote {}
@@ -313,6 +282,77 @@
                 border: 1px solid blue;
                 width: 470px;
                 height: 570px;
+                margin: 0 auto;
+
+
+                @include desktop {
+                    position: absolute;
+                    right: 0;
+                    top: -121px;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+
+
+
+    .our-services {
+        background-color: var(--color-gray);
+
+
+        .container {
+            display: flex;
+            flex-direction: row;
+
+            .content {
+                max-width: 1200px;
+
+
+
+
+
+                .headline {
+
+                    h2 {
+                        width: 90%;
+                        margin: 0 auto;
+                    }
+
+                }
+
+                .content-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    column-gap: 5.5rem;
+                    row-gap: 2.5rem;
+
+
+
+                    .item-container {
+                        background-color: var(--color-light);
+                        padding-block: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        max-width: min-content;
+                        margin: 0 auto;
+
+
+                        h3 {}
+
+                        .services-item-image {}
+
+                        .item-text {
+                            padding: 1rem;
+                            text-align: left;
+                        }
+                    }
+
+                }
+
+
             }
         }
     }

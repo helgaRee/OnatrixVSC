@@ -1,53 +1,35 @@
 h1 {
     color: var(--color-primary);
-};
+}
+
+;
 
 h2 {
     color: var(--color-primary);
-};
+}
+
+;
 
 h3 {
     color: var(--color-secondary);
-};
+}
+
+;
 
 h4 {
     color: var(--color-primary);
-};
+}
+
+;
 
 h5 {
-    color: var(--color-primary);
-};
+    color: var(--color-secondary);
+}
+
+;
 
 h6 {
     color: var(--color-secondary);
-};
+}
 
-
-//inkluderar en mixin för att kunna ändra färgerna för rubrikerna beroende på tema. Men det funkar inte för tillfället.
-@include heading-colors(--color-primary,
-    --color-primary,
-    --color-secondary,
-    --color-primary,
-    --color-primary,
-    --color-secondary,
-);
-
-@include heading-colors(
-    'dark',
-    --color-primary,
-    --color-primary,
-    --color-secondary,
-    --color-primary,
-    --color-light,
-    --color-secondary,
-);
-
-@include heading-colors(
-    'primary',
-    --color-primary,
-    --color-primary,
-    --color-secondary,
-    --color-primary,
-    --color-primary,
-    --color-secondary,
-);
+;

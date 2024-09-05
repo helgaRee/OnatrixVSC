@@ -14,7 +14,7 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="top">
+            <div class="topbar">
                 <div class="container">
                     <div class="content">
                         <div class="adress">
@@ -75,8 +75,8 @@
             
         </header>
         <main>
-            <section id="hero-slider" class="hero">
-                            <div class="background"></div>
+            <section id="hero-slider" class="hero"  style=" background-image: url('/images/Hero-home.jpg')">
+                            <div class="backgroun"></div>
                             <div class="container">
                                 <div class="hero-content">
                                     <h1 class="headline">We bring
@@ -88,8 +88,7 @@
                                 </div>
                             </div>
                         </section> 
-                        <!--            
-                            
+
                         <section id="about-us" class="about-us">
                             <div class="container">
                                 <div class="content">
@@ -101,7 +100,7 @@
                                     <p>Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
                                     <div class="signature-container">
                                         <div class="signature">
-                                            <img src="@signatureImage" alt="@Model?.Value("aboutSignature")" class="signature-image" />
+                                            <img src="images/signature.svg" alt="@Model?.Value("aboutSignature")" class="signature-image" />
                                             <div class="clarification">
                                                 <p class="name">Tina Fox - CEO & Founder</p>
                                             </div>
@@ -114,25 +113,63 @@
                                 </div>
                             </div>
                         </section>
+                        
+
+
+
+
+                        
+                        <section id="our-services" class="our-services">
+                            <div class="container">
+                                <div class="content">
+                                    <div class="headline">
+                                        <h5>OUR SERVICES</h5>
+                                        <h2>We Provide The Solutions 
+                                            To Grow Your Business Faster</h2>
+                                    </div>
+                                    <div class="content-grid">
+                                        <div class="item-container">
+                                            <h3>Risk Management</h3>
+                                            <img src="images/services-1.png" alt="our-services" class="services-item-image" />
+                                            <p class="item-text">Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                        </div>
+                                        <div class="item-container">
+                                            <h3>Risk Management</h3>
+                                            <img src="images/services-1.png" alt="our-services" class="services-item-image" />
+                                            <p class="item-text">Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                        </div>
+                                        <div class="item-container">
+                                            <h3>Risk Management</h3>
+                                            <img src="images/services-1.png" alt="our-services" class="services-item-image" />
+                                            <p class="item-text">Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                        </div>
+                                        <div class="item-container">
+                                            <h3>Risk Management</h3>
+                                            <img src="images/services-1.png" alt="our-services" class="services-item-image" />
+                                            <p class="item-text">Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                        </div>
+                                        <div class="item-container">
+                                            <h3>Risk Management</h3>
+                                            <img src="images/services-1.png" alt="our-services" class="services-item-image" />
+                                            <p class="item-text">Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                        </div>
+                                        <div class="item-container">
+                                            <h3>Risk Management</h3>
+                                            <img src="images/services-1.png" alt="our-services" class="services-item-image" />
+                                            <p class="item-text">Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <!--            
+                            
             
            
            
             
-            <section id="our-services" class="our-services">
-                <div class="container">
-                    <div class="content">
-                        <div class="headline">
-                            <h5></h5>
-                            <h2></h2>
-                        </div>
-                        <div class="item-container">
-                            <h3>@Model?.Value("servicesItemTitle")</h3>
-                            <img src="" alt="" class="services-item-image" />
-                            <p class="item-text"></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
                     
             
             
@@ -222,7 +259,14 @@
             </section>
 
         </main>
-        <footer>FOOTER</footer>
+        <footer class="bg-dark">
+            <div class="container">
+                <div class="copyright">
+                    <p class="copyright-information"></p>
+                    <p class="credits">Credits to    <a href="">Themesflat</a> </p>
+                </div>
+            </div>
+        </footer>
         
         -->
     </div>

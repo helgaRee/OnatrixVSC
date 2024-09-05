@@ -20,7 +20,7 @@
     --color-border-light-transparent: rgba(255, 255, 255, 0.95);
 }
 
-:root.dark-theme {
+/* :root.dark-theme {
     --color-dark: #e0e0e0;
     --color-primary: #a3b3af;
     --color-primary-light: #c1ccc9;
@@ -39,7 +39,7 @@
     --color-border-light: #2c2c2c;
     --color-border-light-transparent: rgba(23, 23, 23, 0.95);
 }
-
+ */
 body {
     color: var(--color-border-secondary);
 }

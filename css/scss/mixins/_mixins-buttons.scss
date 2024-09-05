@@ -4,6 +4,7 @@
     font-style: normal;
 }
 
+
 @mixin btn {
     display: inline-block;
     cursor: pointer;
@@ -32,7 +33,7 @@
     text-decoration: none !important;
     outline: none !important;
     -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background-color: transparent;
 
     &:hover {
@@ -44,7 +45,7 @@
 @mixin btn-search {
     @include button;
 
-    &:hover{
+    &:hover {
         scale: 1.15;
         transition: ease-in 0.2s;
         color: var(--color-primary);

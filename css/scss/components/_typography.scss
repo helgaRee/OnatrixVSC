@@ -4,28 +4,40 @@ p {
     padding-bottom: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     @include heading;
     margin-top: 0;
     margin-bottom: 0.5em;
     line-height: 1.4;
-}
-h1 {
-    font-size: 70px;
+    text-align: center;
 }
 
-h2{
+h1 {
+    font-size: 55px;
+}
+
+h2 {
     font-size: 40px;
 }
 
-h3{
+h3 {
     font-size: 22px;
 }
 
-h4{
+h4 {
     font-size: 16px;
 }
 
-h6{
+h6 {
     font-size: 14px;
+}
+
+.headline {
+    width: 100%;
+    margin: 0 auto;
 }

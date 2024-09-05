@@ -1,9 +1,3 @@
-// .bg-dark {
-//     @include button-colors($bg-color, $text-color, $hover-bg-color, $hover-text-color, $border-color: null, $hover-border-color: null)
-// }
-
-
-//STANDARD FÄRGSÄTTNING KNAPPAR
 .btn-dark {
     @include button-colors(--color-dark, --color-light, --color-accent, --color-primary);
 }
@@ -31,33 +25,3 @@
 .btn-menu {
     @include button-colors(--color-primary, --color-secondary, --color-accent, --color-primary);
 }
-
-/* .bg-dark {
-    .btn-dark{
-        @include button-colors(--color-primary, --color-light, --color-accent, --color-primary, --color-light);
-    }
-} */
-
-
-//OM bakgrundsfärgen är DARK gäller följande kombination av färger: FUNKAR EJ
-@include theme-buttons(
-    'dark',
-    //$bg-color, $text-color, $hover-bg-color, $hover-text-color, $border-color: null, $hover-border-color: null
-    (--color-dark, --color-light, --color-accent, --color-primary, --color-border-dark, --color-border-dark),
-    (--color-primary, --color-secondary, --color-accent, --color-primary, --color-primary),
-    (--color-secondary, --color-primary, --color-accent, --color-primary, --color-secondary),
-    (--color-accent, --color-primary, --color-primary, --color-secondary, --color-light),
-    (--color-gray, --color-primary, --color-accent, --color-primary, --color-light),
-    (--color-light, --color-primary, --color-accent, --color-primary, --color-light),
-    (--color-dark, --color-dark, --color-dark, --color-dark, --color-dark),
-);
-
-@include theme-buttons(
-    'primary',
-    (--color-dark, --color-light, --color-accent, --color-primary, --color-border-dark, --color-border-dark),
-    (--color-primary, --color-secondary, --color-accent, --color-primary, --color-secondary),
-    (--color-secondary, --color-primary, --color-accent, --color-primary, --color-secondary),
-    (--color-accent, --color-primary, --color-primary, --color-secondary, --color-accent, --color-secondary),
-    (--color-gray, --color-primary, --color-accent, --color-primary, --color-light),
-    (--color-light, --color-primary, --color-accent, --color-primary, --color-light),
-);
