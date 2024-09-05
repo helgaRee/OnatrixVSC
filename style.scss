@@ -296,7 +296,7 @@
     }
 
 
-
+    //********'OUR SERVICES*************
 
     .our-services {
         background-color: var(--color-gray);
@@ -357,5 +357,41 @@
         }
     }
 
+
+    //************OUR STORY **************'
+
+    .our-story {
+
+        .container {
+            .content {
+
+                padding: 3rem;
+
+                .headline {
+                    width: 50%;
+                    h2 {}
+                }
+
+                .section-text {
+                    text-align: center;
+                }
+
+                .button-contact-us {
+
+                    display: flex;
+                    justify-content: center;
+
+                }
+            }
+
+            .our-story-image {
+
+                img {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
 
 }

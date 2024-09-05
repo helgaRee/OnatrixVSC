@@ -80,6 +80,10 @@ body {
   color: #535656;
 }
 
+section {
+  padding-block: 4rem;
+}
+
 :root {
   --color-default: #535656;
   --color-dark: #171717;
@@ -354,10 +358,6 @@ container-fluid {
   .container {
     max-width: 1200px;
   }
-}
-
-section {
-  padding-block: 4rem;
 }
 
 a {

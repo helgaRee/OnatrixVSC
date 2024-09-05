@@ -75,7 +75,7 @@
             
         </header>
         <main>
-            <section id="hero-slider" class="hero"  style=" background-image: url('/images/Hero-home.jpg')">
+            <section id="hero-slider" class="hero"  style="background-image: url('/images/Hero-home.jpg')">
                             <div class="backgroun"></div>
                             <div class="container">
                                 <div class="hero-content">
@@ -113,11 +113,7 @@
                                 </div>
                             </div>
                         </section>
-                        
-
-
-
-
+                    
                         
                         <section id="our-services" class="our-services">
                             <div class="container">
@@ -164,46 +160,57 @@
                             </div>
                         </section>
                         
-                        <!--            
+<section id="our-story" class="our-story">
+    <div class="container" style="background-image: url('/images/dot-map-bg.svg'); background-size: cover; background-position: 60%;">
+        <div class="content">
+            <div class="headline">
+                <h2>We are trusted by more than
+                    <span>4.000+ clients</span></h2>
+            </div>
+                <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis molestie nulla. Nam accumsanporttitor arcu,ac tincidunt lectus tincidunt sed.</p>  
+            </div>
+            
+            <div class="button-contact-us">
+                <a href="" class="btn-primary">Contact Us</a>
+            </div>
+      
+           
+            <div class="our-story-image">
+                <img src="/images/our-story.png" alt="This is our story"/>
+            </div>
+        </div>
+</section>
+
+
+
+<section id="success-stories" class="success-stories" style="background-image:url(@successBackgroundSvg); background-size:cover; background-position:60%">
+
+    <div class="container">
+        <div class="headline">
+            <h5>SUCCESS STORIES</h5>
+            <h2>Success story</h2>
+        </div>
+        <div class="content">
+            <div class="item-container">
+                <h4>689</h4>
+                <p>More than 100 customers has been served</p>
+            </div>
+            <div class="item-container">
+                <h4>689</h4>
+                <p>More than 100 customers has been served</p>
+            </div>
+            <div class="item-container">
+                <h4>689</h4>
+                <p>More than 100 customers has been served</p>
+            </div>
+        </div>
+    </div>
+    <img src="images/succesStory.png" alt="succes stories" class="success-image" />
+</section>
                             
+<!--            
+     
             
-           
-           
-            
-                    
-            
-            
-            <section id="our-story" class="our-story">
-                <div class="background" style="background-image:url(@storyBackgroundSvg); background-size: cover; background-position: 60%"></div>
-                <div class="container">
-                    <div class="content">
-                        <div class="headline">
-                            <h2>@Model?.Value("storyHeadline")</h2>
-                        </div>
-                        <p>@Model?.Value("storyText")</p>
-                        <a href="" class="btn primary-btn"></a>
-                    </div>
-                    <img src="@storyImage" alt="@Model?.Value("storyHeadline")" class="our-story-image" />
-                </div>
-            </section>
-            
-            
-            <section id="success-stories" class="success-stories">
-                <div class="background" style="background-image:url(@successBackgroundSvg); background-size:cover; background-position:60%"></div>
-                <div class="container">
-                    <div class="headline">
-                        <h5>@Model?.Value("successSectionTitle")</h5>
-                        <h2>@Model?.Value("successHeadline")</h2>
-                    </div>
-                    <div class="content">
-                        <div class="item-container">
-                            <h4>@Model?.Value("successNumberTitle")</h4>
-                            <p>@Model?.Value("successNumberText")</p>
-                        </div>
-                    </div>
-                </div>
-                <img src="@successImage" alt="@Model?.Value("successSectionTitle")" class="success-image" />
-            </section>
             
             
             <section id="our-projects" class="our-projects">

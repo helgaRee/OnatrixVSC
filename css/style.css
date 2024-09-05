@@ -278,3 +278,19 @@
   padding: 1rem;
   text-align: left;
 }
+.wrapper .our-story .container .content {
+  padding: 3rem;
+}
+.wrapper .our-story .container .content .headline {
+  width: 50%;
+}
+.wrapper .our-story .container .content .section-text {
+  text-align: center;
+}
+.wrapper .our-story .container .content .button-contact-us {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .our-story .container .our-story-image img {
+  width: 100%;
+}
