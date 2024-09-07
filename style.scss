@@ -168,6 +168,13 @@
 
     /*HERO SECTION*/
     .hero {
+        background-image: url('/images/Hero-home.jpg'); // Se till att sökvägen är korrekt
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
 
 
         @include tablet {
@@ -176,10 +183,18 @@
         }
 
         .background {
-            display: none;
+
+
+
+
+
+
+
+            /*             display: none;
             background-image: url('/images/Hero-home.jpg'); // Se till att sökvägen är korrekt
             background-size: cover;
             background-position: center;
+
             width: 100%;
             height: 52vh; // Ger full höjd av skärmen
             position: absolute;
@@ -188,20 +203,30 @@
 
             @include tablet {
                 display: block;
-            }
+            } */
         }
 
         .container {
             // background-color: rgb(200, 234, 249);
 
             .hero-content {
-                width: 100%;
-                padding-top: 4rem;
+                text-align: center;
+                position: absolute;
+                top: 30%;
+                left: 10%;
+                width: 50%;
+
+
+
+                /*                 width: 100%;
+                padding-top: 4rem; */
 
 
                 @include tablet {
-                    position: relative;
-                    z-index: 2;
+                    /*                     position: relative;
+                    z-index: 2; */
+                    left: -185px;
+                    width: 70%;
                 }
 
                 @include desktop {
@@ -324,9 +349,19 @@
 
                 .content-grid {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    grid-template-columns: 1fr;
                     column-gap: 5.5rem;
                     row-gap: 2.5rem;
+
+                    @include tablet {
+                        grid-template-columns: repeat(2, minmax(250px, 1fr));
+                        /* Max 2 kolumner */
+                    }
+
+                    @include desktop {
+                        grid-template-columns: repeat(3, minmax(250px, 1fr));
+                        /* Max 3 kolumner */
+                    }
 
 
 
@@ -361,14 +396,18 @@
     //************OUR STORY **************'
 
     .our-story {
-
         .container {
             .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
                 padding: 3rem;
 
                 .headline {
                     width: 50%;
+
                     h2 {}
                 }
 
@@ -376,12 +415,7 @@
                     text-align: center;
                 }
 
-                .button-contact-us {
-
-                    display: flex;
-                    justify-content: center;
-
-                }
+                .button-contact-us {}
             }
 
             .our-story-image {
@@ -394,4 +428,63 @@
         }
     }
 
+
+    .success-stories {
+        background-color: var(--color-primary);
+        display: flex;
+        flex-direction: column;
+
+
+        @include tablet {
+            height: 11%;
+        }
+
+        @include desktop {
+            height: 16%;
+        }
+
+        .container {
+
+            .headline {
+                h5 {}
+
+                h2 {
+                    color: var(--color-light)
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: row;
+                gap: 4rem;
+
+                .item-container {
+                    h4 {
+                        color: var(--color-secondary);
+                        font-size: 4rem;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        color: var(--color-light);
+                    }
+                }
+            }
+        }
+
+        .success-image {
+
+            margin: 0 auto;
+            width: 100%;
+            margin-top: 2rem;
+
+            @include tablet {
+                width: 50%;
+            }
+
+            @include desktop {}
+
+
+        }
+    }
 }
