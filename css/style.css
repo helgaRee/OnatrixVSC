@@ -39,6 +39,7 @@
 }
 
 .wrapper {
+  /*******************HOME PAGE*************/
   /*HERO SECTION*/
   /*ABOUT US SECTION*/
 }
@@ -166,7 +167,6 @@
 }
 .wrapper .hero {
   background-image: url("/images/Hero-home.jpg");
-  background-color: #cccccc;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -413,4 +413,17 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1rem;
+}
+/*************ABOUT PAGE***************/
+.hero-header {
+  background-color: var(--color-gray);
+}
+.hero-header .container .content .breadcrumb {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-left: 0;
+}
+.hero-header .container .content .breadcrumb li {
+  list-style: none;
 }

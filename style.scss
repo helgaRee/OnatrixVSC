@@ -1,6 +1,7 @@
 @import "./css/scss/mixins/mixins-media";
 
 
+
 .wrapper {
 
     header {
@@ -165,11 +166,11 @@
 
 
 
+    /*******************HOME PAGE*************/
 
     /*HERO SECTION*/
     .hero {
         background-image: url('/images/Hero-home.jpg'); // Se till att sökvägen är korrekt
-        background-color: #cccccc;
         height: 500px;
         background-position: center;
         background-repeat: no-repeat;
@@ -503,9 +504,6 @@
     }
 
 
-
-
-
     .our-projects {
         margin-top: 8rem;
 
@@ -559,8 +557,6 @@
 
 
 
-
-
     .partners {
         .container {
             .content {
@@ -569,6 +565,28 @@
                 gap: 1rem;
 
                 .partners-image {}
+            }
+        }
+    }
+}
+
+
+/*************ABOUT PAGE***************/
+.hero-header{
+    background-color: var(--color-gray);
+    .container{
+        .content{
+            .headline{
+
+            }
+            .breadcrumb{
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                padding-left: 0;
+                li{
+                    list-style: none;
+                }
             }
         }
     }
